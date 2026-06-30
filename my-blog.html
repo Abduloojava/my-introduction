@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+ <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f7f9fa;
+            padding: 20px;
+            
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #1a1a1a;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background-color: #f0f4f8;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            border-left: 5px solid #0066cc;
+        }
+
+        .toc h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #0066cc;
+        }
+
+        .toc ul {
+            list-style-type: none;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .toc a:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        /* Blog Post Entries */
+        .post {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eaeaea;
+            scroll-margin-top: 20px; /* Smooth scrolling offset */
+        }
+
+        .post:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .post-title {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            margin-bottom: 5px;
+        }
+
+        .post-meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .post-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Back to top utility link */
+        .back-to-top {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .back-to-top:hover {
+            text-decoration: underline;
+        }
+        .contact{
+            list-style: none;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="top">
+        
+        <!-- Blog Header -->
+        <header>
+            <h1>The Digital Notebook</h1>
+            <p>Thoughts on web development, design, and continuous learning.</p>
+        </header>
+
+        <!-- Table of Contents (Internal Links) -->
+        <nav class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#entry-1">1. My Tech Journey:</a></li>
+                <li><a href="#entry-2">2. Ongoing pratices i picked up for better design delivery: </a></li>
+            </ul>
+        </nav>
+
+        <!-- Blog Posts Container -->
+        <main>
+            
+            <!-- Entry 1 -->
+            <article class="post" id="entry-1">
+                <h2 class="post-title">My Tech Journey</h2>
+                <div class="post-meta">Published on June 30, 2026 by Abdulrahim Hassan</div>
+                <div class="post-content">
+                    <p>My tech journey started in school with Java in 200-level, then JavaScript and PHP in 300-level. I even used Java to build a Resource Management System for my final year project. </p>
+                    <p>After graduation, I was determined to go deeper into web development, but couldn’t access free training and didn’t have funds for paid programs. I kept applying for opportunities, including eHealth Africa Academy.  </p>
+                    <p>I’ve now been accepted into the UX/UI Design phase with eHealth Africa Academy.  It’s my first time in design, and balancing it with limited time is tough. But I’m here, I’m learning, and I’m not stopping.</p>
+                </div>
+                <a href="#top" class="back-to-top">↑ Back to top</a>
+            </article>
+
+            <!-- Entry 2 -->
+            <article class="post" id="entry-2">
+                <h2 class="post-title">Ongoing practices I picked up for better design delivery:</h2>
+                <div class="post-meta">Published on June 30, 2026 by Abdulrahim Hassan</div>
+                <div class="post-content">
+                    <p>Designing for the user is important.
+                    Designing for the win is the job.
+                    </p>
+                    <P>Early in my career, I was convinced that my job had two parts: advocate for the user, and design the best possible experience for them. That was it. That was the whole thing. I showed up to meetings with user research, service blueprints, journey maps — the works. I had done the homework, and I was ready to make the case</P>
+                    <p>Semantic tags like &lt;header&gt;, &lt;main&gt;, &lt;nav&gt;, and &lt;article&gt; provide immediate context. They improve accessibility for screen readers, provide clear hooks for search engine optimization (SEO), and make code significantly easier for human developers to read and debug. Clean structure always precedes beautiful design.</p>
+                     <p>In the modern era of JavaScript frameworks, it is easy to fall into the trap of using generic generic tags like &lt;div&gt; and &lt;span&gt; for everything. While CSS can make a generic container look like a button or a header, browsers and assistive technologies do not inherently understand what it is.</p>
+                     <p>I will continue updating as learning progressing ...............................................</p>
+                </div>
+                <a href="#top" class="back-to-top">↑ Back to top</a>
+                <p>Looking for matching pieces? Check out </p>
+                <a href="https://debutify.com/blog/what-makes-a-good-power-bi-dashboard#Design%20the%20Dashboard%20for%20Easy%20Reading">debutify blog</a>
+            </article>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+             Contact Us
+          <address>
+            <ul class="contact">
+                <li>A7 Street Bosso Estate Minna
+                Niger State
+                </li>
+               <li> Mail us <a href="mailto:abdulcoolmail@gmail.com">My email address</a>
+                </li>
+                <li>Dia <a href="tel:+2348063323779">My phone Number</a>
+                </li>
+                <li> Google here <a href="http://www.google.com/" target="_blank">Google</a> in a new tab</li>
+               
+            </ul> 
+          </address>
+            <p>&copy; 2026 The Digital Notebook. Built with raw HTML and CSS.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
